@@ -1,0 +1,12 @@
+.card-custom {
+    margin: 0.5em;
+  }
+  .card-custom:hover {
+    color: green;
+    cursor: pointer;
+  }
+  .card-container-custom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

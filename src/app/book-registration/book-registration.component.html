@@ -1,0 +1,17 @@
+<h2>{{ title }}</h2>
+
+<div class="form-custom">
+  <form >
+    <label for="name" class="form-label">Nombre:</label>
+    <input type="text" name="name" [(ngModel)]="inputName" class="form-control">
+    <label for="author" class="form-label">Autor:</label>
+    <input type="text" name="author" [(ngModel)]="inputAuthor" class="form-control">
+    <label for="genre" class="form-label" >Género:</label>
+    <input type="text" name="genre" [(ngModel)]="inputGenre" class="form-control">
+    <label for="year" class="form-label" >Año publicación:</label>
+    <input type="number" name="year" [(ngModel)]="inputYear" class="form-control">
+    <label for="description" class="form-label">Descripción</label>
+    <input type="text" name="description" [(ngModel)]="inputDescription" class="form-control">
+    <input type="submit" class="btn btn-primary" (click)="addBook()">
+  </form>
+</div>
