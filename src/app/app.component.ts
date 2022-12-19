@@ -13,15 +13,8 @@ export class AppComponent {
   title = 'My Library';
   books:Book[]=[]
   
-  selectedBook: Book = this.books[0]
-
 constructor(private logger: Logger, private bookService: BookService){
   this.books = this.bookService.books
 }
-
-
-    setSelectedBook( selectBook: Book){
-      this.selectedBook = selectBook
-    }
 
 }

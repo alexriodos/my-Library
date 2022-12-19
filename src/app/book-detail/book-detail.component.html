@@ -1,10 +1,17 @@
 
 <h2>{{title}}</h2>
-<div>
-    <p>Nombre {{book?.name}}</p>
-    <p>Autor {{book?.author}}</p>
-    <p>Género {{book?.genre}}</p>
-    <p>Año {{book?.publishedYear}}</p>
-    <p>Descripcion {{book?.description}}</p>
 
-</div>
+<div>
+    <p>Nombre: {{book?.name}}</p>
+    <p>Autor: {{book?.author}}</p>
+    <p>Género: {{book?.genre}}</p>
+    <p>Año Publicación: {{book?.publishedYear}}</p>
+    <p>Descripción: {{book?.description}}</p>
+  </div>
+  
+  <button 
+    class="btn btn-primary"
+    (click)="navigateHome()"
+  >
+    Home
+  </button>
